@@ -1,0 +1,238 @@
+﻿<Defaults>
+    <Button
+        class="element"
+        width="114"
+        height="85"
+        textColor="black"
+        textOutline="white"
+        fontStyle="bold"
+        fontSize="11"
+        onClick="ef3a7d/spawn_fight"
+    ></Button>
+    <Button
+        class="searchpanel"
+        image="midUI"
+        width="200"
+        height="32"
+        fontSize="16"
+        rectAlignment="UpperLeft"
+        textColor="white"
+        alignment="UpperLeft"
+        resizeTextForBestFit="true"
+        fontStyle="italic"
+        active="false"
+    ></Button>
+</Defaults>
+
+<Button
+    image="TurnOrderImg"
+    rectAlignment="MiddleLeft"
+    width="48"
+    height="48"
+    offsetXY="12 -15"
+    onclick="TurnOrderShow"
+    tooltip="Open/Close the Turn Order UI"
+    tooltipBackgroundColor="black"
+    tooltipPosition="Right"
+    tooltipOffset="15"
+></Button>
+
+<Button
+    image="PrimalCampaign"
+    rectAlignment="MiddleLeft"
+    width="48"
+    height="48"
+    offsetXY="12 -65"
+    onclick="CampaignShow"
+    tooltip="Open/Close the Expedition UI"
+    tooltipBackgroundColor="black"
+    tooltipPosition="Right"
+    tooltipOffset="15"
+    active="false"
+></Button>
+
+<Panel
+    id="CampaignPanel"
+    image="midUI"
+    active="false"
+    offsetXY="100 -100"
+    rectAlignment="UpperLeft"
+    width="400"
+    height="500"
+    allowDragging="true"
+    returnToOriginalPositionWhenReleased="false"
+>
+    <Text
+        id="title"
+        color="Yellow"
+        fontStyle="Bold"
+        fontSize="64"
+        resizeTextForBestFit="true"
+        rectAlignment="UpperCenter"
+        width="214"
+        height="50"
+    >Choose a monster</Text>
+
+    <Button
+        id="nextRight"
+        width="30"
+        height="30"
+        color="red"
+        rectAlignment="UpperRight"
+        image="Right"
+        onClick="ef3a7d/plus"
+        active="true"
+    ></Button>
+
+    <Button
+        id="nextLeft"
+        width="30"
+        height="30"
+        active="true"
+        color="blue"
+        rectAlignment="UpperLeft"
+        image="Left"
+        onClick="ef3a7d/moins"
+    ></Button>
+
+    <Text
+        id="levelID"
+        color="white"
+        fontStyle="Bold"
+        fontSize="48"
+        resizeTextForBestFit="true"
+        width="84"
+        height="32"
+        offsetXY="-75 15"
+        rectAlignment="LowerCenter"
+    >Level :</Text>
+
+    <InputField
+        id="LevelInput"
+        fontSize="24"
+        width="48"
+        height="48"
+        placeholder="0"
+        textAlignment="MiddleCenter"
+        characterValidation="Integer"
+        characterLimit="1"
+        onEndEdit="ef3a7d/handleLevel"
+        rectAlignment="LowerCenter"
+        offsetXY="15 15"
+    >0</InputField>
+
+    <Button
+        class="element"
+        id="banner"
+        rectAlignment="UpperCenter"
+        offsetXY="0 -40"
+        width="350"
+        height="400"
+        onclick="ef3a7d/SetupMonster"
+        image="Primal"
+        active="true"
+    ></Button>
+</Panel>
+
+<TableLayout
+    id="TurnOrder"
+    active="false"
+    rowBackgroundImage="midUI"
+    rectAlignment="MiddleLeft"
+    offsetXY="75 115"
+    columnWidths="200"
+    width="200"
+    height="200"
+    maxHeight="800"
+    allowDragging="true"
+    returnToOriginalPositionWhenReleased="false"
+    cellBackgroundImage="midUI"
+>
+    <Row
+        preferredHeight="145"
+        dontUseTableRowBackground="true"
+        image="https://steamusercontent-a.akamaihd.net/ugc/11409641284205216910/AE3857677F5C5774CDB6D112C2189DB21B286831/"
+    >
+        <Button height="32" width="32" rectAlignment="MiddleLeft" id="behave1" image="Question" offsetXY="24 7" tooltip="Behaviour description" tooltipBackgroundColor="black" tooltipPosition="Right" tooltipOffset="152"></Button>
+        <Button height="32" width="32" id="behave2" image="Question" offsetXY="0 7" rectAlignment="MiddleCenter" tooltip="Behaviour description" tooltipBackgroundImage="midUI" tooltipPosition="Right" tooltipOffset="92"></Button>
+        <Button height="32" width="32" id="behave3" image="Question" offsetXY="-24 7" rectAlignment="MiddleRight" tooltip="Behaviour description" tooltipBackgroundImage="midUI" tooltipPosition="Right" tooltipOffset="30"></Button>
+        
+
+    </Row>
+
+    <Row id="btn1_row" active="true" preferredHeight="40" dontUseTableRowBackground="true" image="midUI">
+        <Cell>
+            <Panel>
+                <Button id="aggro_Blue" onClick="ClickAggroIcon" active="true" image="https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/" width="30" height="30" rectAlignment="MiddleLeft" offsetXY="20 0" preserveAspect="true" />
+                <Button id="btn1" onClick="changecolor" color="white" image="BlueP" width="150" height="40" rectAlignment="MiddleRight" />
+            </Panel>
+        </Cell>
+    </Row>
+
+    <Row id="btn2_row" active="true" preferredHeight="40" dontUseTableRowBackground="true" image="midUI">
+        <Cell>
+            <Panel>
+                <Button id="aggro_Green" onClick="ClickAggroIcon" active="true" image="https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/" width="30" height="30" rectAlignment="MiddleLeft" offsetXY="20 0" preserveAspect="true" />
+                <Button id="btn2" onClick="changecolor" color="white" image="GreenP" width="150" height="40" rectAlignment="MiddleRight" />
+            </Panel>
+        </Cell>
+    </Row>
+
+    <Row id="btn3_row" active="true" preferredHeight="40" dontUseTableRowBackground="true" image="midUI">
+        <Cell>
+            <Panel>
+                <Button id="aggro_Yellow" onClick="ClickAggroIcon" active="true" image="https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/" width="30" height="30" rectAlignment="MiddleLeft" offsetXY="20 0" preserveAspect="true" />
+                <Button id="btn3" onClick="changecolor" color="white" image="YellowP" width="150" height="40" rectAlignment="MiddleRight" />
+            </Panel>
+        </Cell>
+    </Row>
+
+    <Row id="btn4_row" active="true" preferredHeight="40" dontUseTableRowBackground="true" image="midUI">
+        <Cell>
+            <Panel>
+                <Button id="aggro_Orange" onClick="ClickAggroIcon" active="true" image="https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/" width="30" height="30" rectAlignment="MiddleLeft" offsetXY="20 0" preserveAspect="true" />
+                <Button id="btn4" onClick="changecolor" color="white" image="OrangeP" width="150" height="40" rectAlignment="MiddleRight" />
+            </Panel>
+        </Cell>
+    </Row>
+
+    <Row id="btn5_row" active="true" preferredHeight="45" dontUseTableRowBackground="true" image="midUI">
+        <Cell>
+            <Panel>
+                <Button id="aggro_Red" onClick="ClickAggroIcon" active="true" image="https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/" width="30" height="30" rectAlignment="MiddleLeft" offsetXY="20 0" preserveAspect="true" />
+                <Button id="btn5" onClick="changecolor" color="white" image="RedP" width="150" height="45" rectAlignment="MiddleRight" />
+            </Panel>
+        </Cell>
+    </Row>
+
+    <Row preferredHeight="50" dontUseTableRowBackground="true" image="botUI">
+        <Button
+            id="rotateMonsterBtn"
+            onClick="OnRotateButtonClick"
+            image="https://steamusercontent-a.akamaihd.net/ugc/13651734212823398608/D327DC86C9BA7038A585F8FAC8EE1ED17861BFB7/"
+            width="24"
+            height="24"
+            rectAlignment="LowerCenter"
+            offsetXY="0 8"
+            preserveAspect="true"
+            tooltip="Rotate to Aggro"
+            tooltipBackgroundColor="black"
+        />
+    </Row>
+</TableLayout>
+
+<Panel id="SearchPanel" width="300" height="120" rectAlignment="UpperLeft" offsetXY="75 -13" active="false">
+    <InputField id="searchfield" onValueChanged="FilterResult" placeholder="search for rules here ..." rectAlignment="UpperLeft" width="200" height="32"></InputField>
+    <Button id="result1" class="searchpanel" offsetXY="0 -35"></Button>
+    <Button id="result2" class="searchpanel" offsetXY="0 -65"></Button>
+    <Button id="result3" class="searchpanel" offsetXY="0 -97"></Button>
+    <Button id="result4" class="searchpanel" text="test" offsetXY="0 -129"></Button>
+    <Button id="result5" class="searchpanel" offsetXY="0 -161"></Button>
+    <Button id="searchdone" image="midUI" fontSize="15" tooltip="Click to find rule" resizeTextForBestFit="true" textAlignement="UpperLeft" width="50" height="32" iconAlignment="Right" icon="Rightb" rectAlignment="UpperRight" offsetXY="-48 0" outline="white"></Button>
+</Panel>
+<Button id="PhaseHUD" active="false" onClick="Global/onPhaseHUDClick" color="#1A1A1A" rectAlignment="TopCenter" offsetXY="0 450" width="200" height="40">
+    <HorizontalLayout padding="5 10 5 5" spacing="10">
+        <Image id="PhaseHUD_Image" image="" preserveAspect="true" preferredWidth="30" preferredHeight="30" />
+        <Text id="PhaseHUD_Text" text="Movement Phase" color="white" fontSize="18" alignment="MiddleLeft" />
+    </HorizontalLayout>
+</Button>

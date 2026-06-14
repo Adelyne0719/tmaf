@@ -1,0 +1,182 @@
+<Defaults>
+    <Panel scale='0.1 0.1 0.1' rotation='0 0 180'/>
+    <Button class='checkbox' colors='#FFFFFF00|#00000099|#000000BB|rgba(0.78,0.78,0.78,0.5)' image='https://steamusercontent-a.akamaihd.net/ugc/2456230698421987367/323709E0210E7A65F6D8C6D265FDD80B2819628F/'/>
+    <Button scale='0.1 0.1 0.1' rotation='0 0 180'/>
+    <Button class='minus-button' onClick='decrementCSCounterWrapper' colors='#FFFFFF00|#00000099|#000000BB|rgba(0.78,0.78,0.78,0.5)'/>
+    <Button class='plus-button' onClick='incrementCSCounterWrapper' colors='#FFFFFF00|#00000099|#000000BB|rgba(0.78,0.78,0.78,0.5)'/>
+
+    <Text scale='0.1 0.1 0.1' rotation='0 0 180'/>
+</Defaults>
+
+<!-- Behavior buttons -->
+<Panel position='0 0 -25'>
+  <Button id='aggro-icon' position='772.5 1362.5' width='195' height='255' onClick='enableAggroIcon' image='https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/' preserveAspect='true'></Button>
+
+
+
+
+
+<Button id="behave1"
+        scale='1 1 1'
+        rotation="0 0 0"
+        height="160"
+        position='260 1350'
+        width = "140"
+        image = "https://steamusercontent-a.akamaihd.net/ugc/2499015733551843140/89B11196A6A96F74CB856B8FDA9DDE5371C03601/"
+    > </Button>
+<Button id="behave2"
+        rotation="0 0 0"
+        scale='1 1 1'
+        height="160"
+        position='417 1350'
+        width = "140"
+        image = "https://steamusercontent-a.akamaihd.net/ugc/2499015733551843140/89B11196A6A96F74CB856B8FDA9DDE5371C03601/"
+    > </Button>
+    <Button  id="behave3"
+        scale='1 1 1'
+        rotation="0 0 0"
+        height="160"
+        position='575 1350'
+        width = "140"
+        image = "https://steamusercontent-a.akamaihd.net/ugc/2499015733551843140/89B11196A6A96F74CB856B8FDA9DDE5371C03601/"
+    > </Button>
+
+    <!-- 행동 트리거 데칼 오버레이 (평소엔 투명, 발동 시 보임) -->
+    <Button id="behave1_decal" scale='1 1 1' rotation='0 0 0' position='260 1350' width="160" height="180" active="false" image="https://steamusercontent-a.akamaihd.net/ugc/17217982571084051412/3600CEE41C490A675D0477EB9954DD6A87A36EA8/" />
+    <Button id="behave2_decal" scale='1 1 1' rotation='0 0 0' position='417 1350' width="160" height="180" active="false" image="https://steamusercontent-a.akamaihd.net/ugc/17217982571084051412/3600CEE41C490A675D0477EB9954DD6A87A36EA8/" />
+    <Button id="behave3_decal" scale='1 1 1' rotation='0 0 0' position='575 1350' width="160" height="180" active="false" image="https://steamusercontent-a.akamaihd.net/ugc/17217982571084051412/3600CEE41C490A675D0477EB9954DD6A87A36EA8/" />
+</Panel>
+
+<!-- <Panel id='help-button' position='-77.25 -20 -25' width='85' height='111' onClick='displayHelpWrapper' color='#FFFFFFFF'></Panel> -->
+
+<!-- Aggro selection button -->
+<Panel id='aggro-button' position='-77.25 -139.1 -25' width='200' height='220' onClick='toggleAggroWrapper' image='https://steamusercontent-a.akamaihd.net/ugc/2452852111571389540/CA30F389ADD46B0FE9F0CFABD07C20615EFDE103/'></Panel>
+
+<!-- First player selection button -->
+<Panel id='first-player-button' rotation='0 0 135' position='42.3 -129.7 -25' width='90' height='90' onClick='toggleFirstPlayerWrapper'></Panel>
+
+<!-- Toggle character sheet button -->
+<Panel id='toggle-character-sheet-button' position='98.3 97 -25' width='160' height='90' onClick='toggleCharacterSheetWrapper'></Panel>
+
+<!-- Quadrant Terrains -->
+<Panel id='quadrant-terrains' position='88 -145 -25' width='420' height='140'>
+<Image id='quadrant-terrain-1' position='-140 0 0' width='140' height='140' image='' active='false' preserveAspect='true' onMouseEnter='onTerrainEnter1' onMouseExit='onTerrainExit'></Image>
+<Image id='quadrant-terrain-2' position='0 0 0' width='140' height='140' image='' active='false' preserveAspect='true' onMouseEnter='onTerrainEnter2' onMouseExit='onTerrainExit'></Image>
+<Image id='quadrant-terrain-3' position='140 0 0' width='140' height='140' image='' active='false' preserveAspect='true' onMouseEnter='onTerrainEnter3' onMouseExit='onTerrainExit'></Image>
+</Panel>
+<Text id='terrain-tooltip' position='88 -145 -30' width='400' height='60' fontSize='50' color='#FFFFFF' outline='#000000' outlineSize='3' active='false' text=''></Text>
+
+<!-- Turn end button -->
+<Panel id='turn-end-button' position='-97 -135 -25' width='140' height='140' onClick='toggleTurnEndWrapper'></Panel>
+
+<!-- Equipment total display -->
+<Text id='equipment-total' position='1 -129 -25' width='200' height='100' fontSize='60' color='#FFFFFF' text='0' alignment='MiddleCenter'></Text>
+
+<Text id='equipment-damage' position='15.5 -129 -25' width='120' height='100' fontSize='60' color='#FF0000' text='' alignment='MiddleCenter'></Text>
+
+<!-- Toggle character sheet button -->
+<Panel id='character-sheet-buttons' scale='1 1 1' rotation='0 0 0'>
+    <!-- Skill Tree section -->
+    <Button id='skilltree-1-1' class='checkbox' position='99 118.4 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+    <Button id='skilltree-1-2' class='checkbox' position='77.7 118.4 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+
+    <Button id='skilltree-2-1' class='checkbox' position='99 125.2 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+    <Button id='skilltree-2-2' class='checkbox' position='77.7 125.2 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+
+    <Button id='skilltree-3-1' class='checkbox' position='99 132.0 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+    <Button id='skilltree-3-2' class='checkbox' position='77.7 132.0 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+
+    <Button id='skilltree-4-1' class='checkbox' position='99 138.8 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+    <Button id='skilltree-4-2' class='checkbox' position='77.7 138.8 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+
+    <Button id='skilltree-5-1' class='checkbox' position='99 145.7 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+    <Button id='skilltree-5-2' class='checkbox' position='77.7 145.7 -25' width='50' height='50' onClick='toggleSkillTreeCheckmarkWrapper'></Button>
+
+    <!-- These HAVE to use button, otherwise the colors attribute doesn't work on panels :( -->
+    <!-- Materials section -->
+    <Button id='materials-1-minus' class='minus-button' position='27.1 118.4 -25' width='50' height='50'></Button>
+    <Text id='materials-1' position='24.6 118.3 -22' width='80' height='50' fontSize='35' text='0'></Text>
+    <Button id='materials-1-plus' class='plus-button' position='22.1 118.4 -25' width='50' height='50'></Button>
+
+    <Button id='materials-2-minus' class='minus-button' position='27.1 123.7 -25' width='50' height='50'></Button>
+    <Text id='materials-2' position='24.6 123.7 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='materials-2-plus' class='plus-button' position='22.1 123.7 -25' width='50' height='50'></Button>
+
+    <Button id='materials-3-minus' class='minus-button' position='27.1 129.1 -25' width='50' height='50'></Button>
+    <Text id='materials-3' position='24.6 129.1 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='materials-3-plus' class='plus-button' position='22.1 129.1 -25' width='50' height='50'></Button>
+
+    <Button id='materials-4-minus' class='minus-button' position='27.1 134.5 -25' width='50' height='50'></Button>
+    <Text id='materials-4' position='24.6 134.5 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='materials-4-plus' class='plus-button' position='22.1 134.5 -25' width='50' height='50'></Button>
+
+    <Button id='materials-5-minus' class='minus-button' position='27.1 139.8 -25' width='50' height='50'></Button>
+    <Text id='materials-5' position='24.6 139.8 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='materials-5-plus' class='plus-button' position='22.1 139.8 -25' width='50' height='50'></Button>
+
+    <Button id='materials-6-minus' class='minus-button' position='27.1 145.1 -25' width='50' height='50'></Button>
+    <Text id='materials-6' position='24.6 145.1 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='materials-6-plus' class='plus-button' position='22.1 145.1 -25' width='50' height='50'></Button>
+
+    <!-- Plants section -->
+    <Button id='plants-1-minus' class='minus-button' position='-19.95 118.4 -25' width='50' height='50'></Button>
+    <Text id='plants-1' position='-22.45 118.3 -22' width='80' height='50' fontSize='35' text='0'></Text>
+    <Button id='plants-1-plus' class='plus-button' position='-24.95 118.4 -25' width='50' height='50'></Button>
+
+    <Button id='plants-2-minus' class='minus-button' position='-19.95 123.7 -25' width='50' height='50'></Button>
+    <Text id='plants-2' position='-22.45 123.7 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='plants-2-plus' class='plus-button' position='-24.95 123.7 -25' width='50' height='50'></Button>
+
+    <Button id='plants-3-minus' class='minus-button' position='-19.95 129.1 -25' width='50' height='50'></Button>
+    <Text id='plants-3' position='-22.45 129.1 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='plants-3-plus' class='plus-button' position='-24.95 129.1 -25' width='50' height='50'></Button>
+
+    <Button id='plants-4-minus' class='minus-button' position='-19.95 134.5 -25' width='50' height='50'></Button>
+    <Text id='plants-4' position='-22.45 134.5 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='plants-4-plus' class='plus-button' position='-24.95 134.5 -25' width='50' height='50'></Button>
+
+    <Button id='plants-5-minus' class='minus-button' position='-19.95 139.8 -25' width='50' height='50'></Button>
+    <Text id='plants-5' position='-22.45 139.8 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='plants-5-plus' class='plus-button' position='-24.95 139.8 -25' width='50' height='50'></Button>
+
+    <Button id='plants-6-minus' class='minus-button' position='-19.95 145.1 -25' width='50' height='50'></Button>
+    <Text id='plants-6' position='-22.45 145.1 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='plants-6-plus' class='plus-button' position='-24.95 145.1 -25' width='50' height='50'></Button>
+
+    <!-- Elements section -->
+    <Button id='elements-1-minus' class='minus-button' position='-61.4 118.2 -25' width='50' height='50'></Button>
+    <Text id='elements-1' position='-63.9 118.2 -22' width='80' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-1-plus' class='plus-button' position='-66.4 118.2 -25' width='50' height='50'></Button>
+
+    <Button id='elements-2-minus' class='minus-button' position='-61.4 123.5 -25' width='50' height='50'></Button>
+    <Text id='elements-2' position='-63.9 123.5 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-2-plus' class='plus-button' position='-66.4 123.5 -25' width='50' height='50'></Button>
+
+    <Button id='elements-3-minus' class='minus-button' position='-61.4 128.9 -25' width='50' height='50'></Button>
+    <Text id='elements-3' position='-63.9 128.9 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-3-plus' class='plus-button' position='-66.4 128.9 -25' width='50' height='50'></Button>
+
+    <Button id='elements-4-minus' class='minus-button' position='-61.4 134.3 -25' width='50' height='50'></Button>
+    <Text id='elements-4' position='-63.9 134.3 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-4-plus' class='plus-button' position='-66.4 134.3 -25' width='50' height='50'></Button>
+
+    <Button id='elements-5-minus' class='minus-button' position='-61.4 139.6 -25' width='50' height='50'></Button>
+    <Text id='elements-5' position='-63.9 139.6 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-5-plus' class='plus-button' position='-66.4 139.6 -25' width='50' height='50'></Button>
+
+    <Button id='elements-6-minus' class='minus-button' position='-93.0 118.2 -25' width='50' height='50'></Button>
+    <Text id='elements-6' position='-95.5 118.2 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-6-plus' class='plus-button' position='-98.0 118.2 -25' width='50' height='50'></Button>
+
+    <Button id='elements-7-minus' class='minus-button' position='-93.0 123.5 -25' width='50' height='50'></Button>
+    <Text id='elements-7' position='-95.5 123.5 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-7-plus' class='plus-button' position='-98.0 123.5 -25' width='50' height='50'></Button>
+
+    <Button id='elements-8-minus' class='minus-button' position='-93.0 128.9 -25' width='50' height='50'></Button>
+    <Text id='elements-8' position='-95.5 128.9 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-8-plus' class='plus-button' position='-98.0 128.9 -25' width='50' height='50'></Button>
+
+    <Button id='elements-9-minus' class='minus-button' position='-93.0 134.3 -25' width='50' height='50'></Button>
+    <Text id='elements-9' position='-95.5 134.3 -25' width='50' height='50' fontSize='35' text='0'></Text>
+    <Button id='elements-9-plus' class='plus-button' position='-98.0 134.3 -25' width='50' height='50'></Button>
+</Panel>

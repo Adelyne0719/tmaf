@@ -1,0 +1,11 @@
+build/
+dist/
+__pycache__/
+*.dll
+*.pkg
+*.pyz
+*.log
+*.exe
+*.zip
+*.xlsx
+*.csv

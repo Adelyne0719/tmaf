@@ -1,0 +1,196 @@
+<!-- 격앙 / 가속 (원본 유지) -->
+<Button id="minusAcc"
+    onclick="addSub"
+    width="16"
+    height="16"
+    position="130 24 -14"
+    image="https://steamusercontent-a.akamaihd.net/ugc/2493386410233339940/5E732D82691779687E215698ADE6D7D3D5A8AE59/"
+></Button>
+
+<Button id="plusAcc"
+    onclick="addSub"
+    width="16"
+    height="16"
+    position="95 24 -12"
+    image="https://steamusercontent-a.akamaihd.net/ugc/2493386410233341122/BF7F32F978031CA15262F38ECF1CB624A595830A/"
+></Button>
+
+<Button id="minusStr"
+    onclick="addSub"
+    width="16"
+    height="16"
+    position="130 58 -12"
+    image="https://steamusercontent-a.akamaihd.net/ugc/2493386410233339940/5E732D82691779687E215698ADE6D7D3D5A8AE59/"
+></Button>
+
+<Button id="plusStr"
+    image="https://steamusercontent-a.akamaihd.net/ugc/2493386410233341122/BF7F32F978031CA15262F38ECF1CB624A595830A/"
+    onclick="addSub"
+    width="16"
+    height="16"
+    position="95 58 -12"
+></Button>
+
+<!-- 몬스터 데미지 / 강인함 이미지 -->
+<Image id="monsterDamage"
+    width="10"
+    height="10"
+    position="121 -80 -12"
+    rotation="0 0 180"
+    image="https://steamusercontent-a.akamaihd.net/ugc/18178838673151729390/246BA89F9DF18B358EE363B4DAC073E2D387BEBC/"
+></Image>
+
+<Image id="monsterToughness"
+    width="10"
+    height="10"
+    position="105 -80 -12"
+    rotation="0 0 180"
+    image="https://steamusercontent-a.akamaihd.net/ugc/17146917977250358932/DD9C7C548411F4D724E50368063A11F6E62F6C69/"
+></Image>
+
+<Image id="monsterToughnessBroken"
+    active="false"
+    width="10"
+    height="10"
+    position="105 -80 -12"
+    rotation="0 0 180"
+    image="https://steamusercontent-a.akamaihd.net/ugc/18365956360113696784/ECDC1B27E249818BC7FFABA25A77CB4C7FBD9449/"
+></Image>
+
+<Image id="healthStance"
+    active="false"
+    width="10"
+    height="10"
+    position="0 0 -11"
+    rotation="0 0 180"
+    image="https://steamusercontent-a.akamaihd.net/ugc/14130820517609829141/8ECBD5A487D57CD2771EA8B7EA2DAD72B12D74CC/"
+></Image>
+
+<!-- 숫자 표시 (이미지 위 오버레이). scale 제거 + 직접 fontSize -->
+<Text id="monsterDamageText"
+    raycastTarget="true"
+    onMouseEnter="hoverDamage"
+    onMouseExit="hoverExit"
+    onClick="clickDamage"
+    width="200"
+    height="100"
+    position="121 -80 -13"
+    rotation="0 0 180"
+    scale="0.08 0.08 1"
+    color="#FF0000"
+    fontSize="80"
+    alignment="MiddleCenter"
+>0</Text>
+
+<Text id="monsterToughnessText"
+    raycastTarget="true"
+    onMouseEnter="hoverToughness"
+    onMouseExit="hoverExit"
+    onClick="clickToughness"
+    width="200"
+    height="100"
+    position="105 -80 -13"
+    rotation="0 0 180"
+    scale="0.08 0.08 1"
+    color="#FFFFFF"
+    fontSize="80"
+    alignment="MiddleCenter"
+>0</Text>
+
+<!-- 데미지 + 1/5/10/50 (아이콘 y=-75 아래쪽 → y=-60). 디버그용 빨간 -->
+<Button id="dmgP1"
+    onclick="adjustDmgPlus"
+    width="10"
+    height="6"
+    position="128.5 -68 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="1"
+    textColor="#FFFFFF"
+    fontSize="40"
+></Button>
+
+<Button id="dmgP5"
+    onclick="adjustDmgPlus"
+    width="10"
+    height="6"
+    position="118 -68 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="5"
+    textColor="#FFFFFF"
+    fontSize="40"
+></Button>
+
+<Button id="dmgP10"
+    onclick="adjustDmgPlus"
+    width="10"
+    height="6"
+    position="108 -68 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="10"
+    textColor="#FFFFFF"
+    fontSize="30"
+></Button>
+
+<Button id="dmgP50"
+    onclick="adjustDmgPlus"
+    width="10"
+    height="6"
+    position="98 -68 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="25"
+    textColor="#FFFFFF"
+    fontSize="30"
+></Button>
+
+<!-- 데미지 - 1/5/10/50 -->
+<Button id="dmgM1"
+    onclick="adjustDmgMinus"
+    width="10"
+    height="6"
+    position="128.5 -61.5 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="1"
+    textColor="#FFFFFF"
+    fontSize="40"
+></Button>
+
+<Button id="dmgM5"
+    onclick="adjustDmgMinus"
+    width="10"
+    height="6"
+    position="118 -61.5 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="5"
+    textColor="#FFFFFF"
+    fontSize="40"
+></Button>
+
+<Button id="dmgM10"
+    onclick="adjustDmgMinus"
+    width="10"
+    height="6"
+    position="108 -61.5 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="10"
+    textColor="#FFFFFF"
+    fontSize="30"
+></Button>
+
+<Button id="dmgM50"
+    onclick="adjustDmgMinus"
+    width="10"
+    height="6"
+    position="98 -61.5 -13"
+    rotation="0 0 180"
+    colors="#FFFFFF00|#FFFFFF00|#FFFFFF05|#777777"
+    text="50"
+    textColor="#FFFFFF"
+    fontSize="30"
+></Button>
