@@ -1,0 +1,148 @@
+# Global
+COMMAND RE-ROLL: [1CP]
+WHEN: Any phase, just after you make one of the following rolls for a friendly unit or model: Advance roll, Charge roll, Damage roll, Hazard roll, Hit roll, Save roll, Wound roll, A roll to determine the number of attacks generated with a weapon.
+TARGET: That unit or model.
+EFFECT: You re-roll that roll. If you are rolling more than one dice together, select one of those dice to re-roll (excluding charge rolls, which you must re-roll in full).
+
+EPIC CHALLENGE: [1CP]
+WHEN: Fight phase, just after a friendly CHARACTER unit is selected to fight.
+TARGET: That CHARACTER unit.
+EFFECT: Select one CHARACTER model in your unit. Until the end of the phase, that model's melee weapons have the [PRECISION] ability.
+
+INSANE BRAVERY: [1CP]
+WHEN: Battle-shock step of your Command phase, just before you make a battle-shock roll for a friendly unit.
+TARGET: That unit.
+EFFECT: That battle-shock roll is automatically successful.
+RESTRICTIONS: You cannot use this stratagem more than once per battle.
+
+EXPLOSIVES: [1CP]
+WHEN: Your Shooting phase.
+TARGET: One friendly unengaged EXPLOSIVES/GRENADES unit that is eligible to shoot and did not make an advance move this turn.
+EFFECT: Resolve the following sequence: 1. Select one EXPLOSIVES/GRENADES model in your unit. 2. Select one unengaged enemy unit within 8" of and visible to that model. 3. Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.
+
+CRUSHING IMPACT: [1CP]
+WHEN: Your Charge phase, just after a friendly MONSTER/VEHICLE unit ends a charge move.
+TARGET: That MONSTER/VEHICLE unit.
+EFFECT: Resolve the following sequence: 1. Select one enemy unit engaged with your unit. 2. Select one model in your unit engaged with that enemy unit. 3. Roll a number of D6 equal to the T characteristic of that model: for each 1, your unit suffers 1 mortal wound; for each 5+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds per unit).
+
+RAPID INGRESS: [1CP]
+WHEN: End of your opponent's Movement phase.
+TARGET: One friendly unit that is in strategic reserves (excluding AIRCRAFT).
+EFFECT: Your unit makes an ingress move.
+RESTRICTIONS: You cannot use this stratagem during the first battle round.
+
+FIRE OVERWATCH: [1CP]
+WHEN: End of your opponent's Movement phase.
+TARGET: One friendly unengaged unit (excluding TITANIC units).
+EFFECT: Your unit shoots using snap shooting.
+
+SNAP SHOOTING: 
+ELIGIBLE IF: As stated in the rule allowing this shooting type.
+EFFECT: Your unit shoots as described in Making Attacks.
+WHILE SHOOTING: You can only target one visible enemy unit within 24" of your unit (and only if it is an eligible target). Each attack only hits on an unmodified hit roll of 6 (irrespective of the attacking weapon's BS characteristic or any modifiers). You cannot re-roll hit rolls.
+AFTER SHOOTING: Until the end of the phase, your unit is not eligible to start an action.
+
+SMOKESCREEN: [1CP]
+WHEN: Start of your opponent's Shooting phase.
+TARGET: One friendly SMOKE unit.
+EFFECT: Until the end of the phase, each time an attack targets either your SMOKE unit, or a unit that is not fully visible to the attacking model because of one or more models in your SMOKE unit, the target has the benefit of cover against that attack.
+
+HEROIC INTERVENTION: [1CP]
+WHEN: End of your opponent's Charge phase.
+TARGET: One friendly unengaged unit within 12" of one or more enemy units. You can only select a VEHICLE unit if it is a CHARACTER/WALKER unit.
+EFFECT: Resolve a charge with your unit. While doing so, before making the charge roll, you must select one of the following modes: 
+- Leap to Defend: When selecting charge targets, you can only select enemy units that made a charge move this phase and are within the maximum distance. 
+- Into the Fray (+1CP): When making the charge roll, if the result is greater than 6 (after modifiers), change it to 6. When selecting charge targets, you can select any enemy units that are within 6" of your unit and within the maximum distance.
+
+COUNTEROFFENSIVE: [2CP]
+WHEN: Fight step of your opponent's Fight phase, just after an enemy unit has resolved its attacks.
+TARGET: One friendly unit that is eligible to fight.
+EFFECT: Until the end of the phase, your unit has the Fights First ability and it must be the next unit you select to fight.
+
+# 1st Company Task Force
+Detachment Points: 2
+Extremis-level Threat: Once per battle, in your Command phase, you can use this ability. If you do, until the start of your next Command phase, each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll as well.
+
+# Anvil Siege Force
+Detachment Points: 2
+Shield of the Imperium: Ranged weapons equipped by Adeptus Astartes models from your army have the [HEAVY] ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model's unit Remained Stationary this turn, add 1 to the Wound roll.
+
+# Armoured Speartip
+Detachment Points: 3
+Rapid Deployment: Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Fly) that made a Normal or Advance move this phase (excluding those that arrived from Strategic Reserves), that disembarked unit can make a Normal move of up to D6", or a Normal move of up to D3+3" instead if that Transport is a Heavy Transport (see below). Adeptus Astartes Transport units from your army (excluding FLY) that have a Wounds characteristic of 14+ have the Heavy Transport keyword.
+
+# Bastion Task Force
+Detachment Points: 2
+Interlocking Tactics: Adeptus Astartes Battleline units from your army: Are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back. Are eligible to start to perform an Action in a turn in which they Advanced or Fell Back. Each time an Adeptus Astartes Battleline unit from your army is selected to attack, after resolving those attacks, select one enemy unit hit by one or more of those attacks. Until the end of the turn, that enemy unit is auspex scanned. Each time an Adeptus Astartes model from your army makes an attack that targets an auspex scanned unit, re‑roll a Hit roll of 1.
+
+# Ceramite Sentinels
+Detachment Points: 3
+Adaptive Defence: Each time an Adeptus Astartes model from your army makes an attack, if that model’s unit is within a terrain feature, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. Adeptus Astartes units from your army gain the Entrenched keyword while all of the following are true: That unit is within a terrain feature. That unit was not set up on the battlefield this turn. No model in that unit has moved more than 3” this turn.
+
+# Champions of Fenris
+Detachment Points: 1
+The Great Wolf Watches: Friendly ADEPTUS ASTARTES INFANTRY CHARACTER units have the following ability: Countercharge: (Once per battle round, per unit) You can target this unit with the Heroic Intervention stratagem, regardless of any other uses of that stratagem this phase. If you do: ▪ That use does not prevent any uses of that stratagem on other units this phase. Restrictions: Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.
+
+# Firestorm Assault Force
+Detachment Points: 2
+Close-Range Eradication: Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12", add 1 to the Strength characteristic of that attack.
+
+# Fulguris Task Force
+Detachment Points: 1
+Skystrike: ▪ Friendly LAND SPEEDER/STORM SPEEDER HAILSTRIKE/STORM SPEEDER HAMMERSTRIKE/STORM SPEEDER THUNDERSTRIKE units have SPEEDER. ▪ In your first Movement phase, friendly SPEEDER units can make an ingress move.
+
+# Gladius Task Force
+Detachment Points: 3
+Combat Doctrines: At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all Adeptus Astartes units from your army. You can only select each Combat Doctrine once per battle. DEVASTATOR DOCTRINE This unit is eligible to shoot in a turn in which it Advanced. TACTICAL DOCTRINE This unit is eligible to shoot and declare a charge in a turn in which it Fell Back. ASSAULT DOCTRINE This unit is eligible to declare a charge in a turn in which it Advanced.
+
+# Headhunter Task Force
+Detachment Points: 2
+Target Sighted: Each time a Tank Ace unit from your army (see below) Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6" to the Move characteristic of models in that unit. Each time a Tank Ace unit from your army shoots in your Shooting phase, if that unit did not Advance this turn, you can re‑roll the Damage roll. Adeptus Astartes Vehicle units from your army (excluding Fortifications, Drop Pods, Walkers and units that can Fly) have the Tank Ace keyword. In the Muster Armies step, you can select up to three Tank Ace units from your army to gain the Character keyword. Designer’s Note: This means that the selected units can be given enhancements, and one of them can be selected as your Warlord.
+
+# Ironstorm Spearhead
+Detachment Points: 2
+Armoured Wrath: Once per phase for each Adeptus Astartes unit in your army, you can re-roll one Hit roll, one Wound roll, or one Damage roll made for a model in that unit.
+
+# Legends of Saga and Song
+Detachment Points: 1
+Loping Charge: Friendly ADEPTUS ASTARTES TERMINATOR units have +1 to charge rolls. Restrictions: Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.
+
+# Librarius Conclave
+Detachment Points: 1
+Psychic Disciplines: At the start of the battle round, select one of the following Psychic Disciplines abilities. Friendly Adeptus Astartes Psyker units have that ability until the end of the battle round. ▪ Biomancy Discipline: This unit has +2" M. ▪ Divination Discipline: This unit’s attacks can: ▫ Re‑roll hit rolls of 1. ▫ Re‑roll wound rolls of 1. ▪ Pyromancy Discipline: This unit’s ranged attacks that target an enemy unit within 12" of this unit have +1 AP. ▪ Telekinesis Discipline: Ranged attacks that target this unit have ‑1 S. ▪ Telepathy Discipline: This unit’s attacks can ignore modifiers to BS, WS and hit rolls.
+
+# Orbital Assault Force
+Detachment Points: 2
+Rapid-drop Deployment: At the start of the Declare Battle Formations step, select a number of Adeptus Astartes units (excluding Titanic units) from your army based on the battle size, as shown below. Models in those units have the Deep Strike ability. Incursion - 2 Units Strike Force - 3 Units Onslaught - 4 Units Each time an Adeptus Astartes model from your army makes an attack, if it was set up on the battlefield this turn, re‑roll a Wound roll of 1. If it disembarked from a Drop Pod this turn, re‑roll a Hit roll of 1 as well.
+
+# Saga of the Beastslayer
+Detachment Points: 2
+Legendary Slayers: Each time an Adeptus Astartes model from your army makes an attack, if that attack targets a Character, Monster or Vehicle unit or if your Saga is completed(see below), that attack has the [LETHAL HITS] ability. Saga of the Beastslayer At the start of the first battle round, your Beastslayer tally is 0, and you determine your Beastslayer target by halving the number of units from your opponent's army (including those embarked within Transports) that have one or more of the following Keywords (rounding up): Character, Monster, Vehicle. Each time an Adeptus Astartes unit from your army shoots or fights, after all of those attacks have been resolved, add 1 to your Beastslayer tally for each enemy unit with one or more of the Keywords destroyed by those attacks: Character, Monster, Vehicle. Once your Beastslayer tally is equal to or greater than your Beastslayer target your Saga is completed.
+
+# Saga of the Bold
+Detachment Points: 2
+Heroes All: Each time an Adeptus Astartes unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks ■ If you Saga is completed (see below), you can re-roll one Hit roll, one Wound roll, and one Damage roll. ■ Otherwise, if that unit is a Space Wolves Character unit, you can re-roll one Hit roll, one Wound roll, or one Damage roll. Saga of the Bold Each time a Space Wolves Character unit from your army does one of the following, that unit achieves a Boast. Once three or more different Boasts have been achieved by units from your army, your saga is completed ■ Your Hide as a Trophy: That unit destroys your Oath of Moment target ■ Slay Them All: That unit destroys your Oath of Moment target, and that is the second Oath of Moment target destroyed by that unit in this battle. ■ Overrun Their Position: At the end of either player's turn, that unit is wholly within your opponent's deployment zone. ■ Hold the Line: From the second battle round onwards, at the end of your Command phase, that unit is within range of an objective marker you control that is not within your deployment zone.
+
+# Saga of the Great Wolf
+Detachment Points: 2
+Master of Wolves: At the start of your Command phase, you can select one of the Hunting Packs listed below. Until the start of your next Command phase, that Hunting Pack is active and its effects apply to all |Adeptus Astartes units from your army. You can only select each Hunting Pack once per battle. Encircling Jaws: This unit can re-roll Advance rolls and Charge rolls. Hunter’s Eye: Each time a model in this unit makes a ranged attack, add 1 to the Hit roll. Ferocious Strike: Each time this unit is selected to fight, select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability. Howling Onslaught Once per battle, when selecting a Hunting Pack for the Master of Wolves Detachment rule (see above), if a Logan Grimnar model from your army is on the battlefield, you can select a Hunting Pack you have already selected this battle
+
+# Saga of the Hunter
+Detachment Points: 2
+Pack's Quarry: Each time a model in a Space Wolves unit from your army makes a melee attack that targets an enemy unit, if that enemy unit is within Engagement Range of one or more other Adeptus Astartes units from your army, or if the attacking unit contains more models than that enemy unit. ■ Add 1 to the Hit roll. ■ If your Saga is completed(see below), add 1 to the Wound roll as well. Saga of the Hunter At the start of the first battle round your Quarry tally is 0. Each time an ADEPTUS ASTARTES unit from your army fights, after all those attacks have been resolved, add 1 to your Quarry tally for each enemy unit destroyed by those attacks. Once your Quarry tally is equal to or greater than the number shown in the table below(depending on the battle size), you Saga is completed. Incursion - 2 Strike Force - 3 Onslaught - 4
+
+# Stormlance Task Force
+Detachment Points: 3
+Lightning Assault: Adeptus Astartes units from your army are eligible to declare a charge in a turn in which they Advanced or Fell Back.
+
+# Subversion Assets
+Detachment Points: 1
+New Rule: Friendly PHOBOS/SCOUT SQUAD units have the following ability: Transhuman Perception: In your Shooting phase, this unit can select one visible enemy unit within 12". That enemy unit is detected: ▪ While a unit is detected, that unit has +3" detection range.
+
+# Vanguard Spearhead
+Detachment Points: 2
+Shadow Masters: Each time a ranged attack targets an ADEPTUS ASTARTES unit from your army, unless the attacking model is within 12", the target has the benefit of cover.
+
+# Veterans of the Fang
+Detachment Points: 1
+Old Greymanes: When a friendly GREY HUNTER unit starts an action, that action does not prevent this unit from being eligible to shoot. ▪ In the Declare Battle Formations step, you can split a friendly GREY HUNTERS unit into two units, each with a starting strength of 5. Restrictions: Your army can include SPACE WOLVES units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.
